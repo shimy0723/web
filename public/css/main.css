@@ -219,7 +219,10 @@ p {
 }
 
 .menu-button:hover {
-    
+    width:52px;
+    height:52px;
+    left:74px;
+    top:144px;
     transition: .2s 0s color ease-in-out;
 }
 

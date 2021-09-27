@@ -2,7 +2,10 @@
     --primary-color: #9ACD32;
     --secondary-color: #87CEFA;
     --light-color: #f3f3f3;
+    --lighter-color: #fff;
     --dark-color: #333;
+    --darker-color: #191919;
+    --grey-color: #3a3944;
     --max-width: 1100px;
 }
 
@@ -15,7 +18,7 @@
 body {
     /* font */
     line-height: 1.5;
-    background: var(--dark-color);
+    background: var(--darker-color);
 }
 
 a {
@@ -23,9 +26,149 @@ a {
     text-decoration: none;
 }
 
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.logo {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    z-index: 7;
+}
 
 .logo img{    
     border: 0;
     width: 90px;
     height: 50px;
+}
+
+.social {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    z-index: 5;
+    color: var(--lighter-color);
+    height: 30px;    
+}
+
+.social .label {
+    line-height: 30px;
+    float: left;
+    margin-right: 20px;
+    letter-spacing: 3px;
+    font-size: 10px;
+}
+
+.social a:not(:last-child) {
+    margin-right: 5px;
+}
+
+.social a:hover {
+    color: var(--primary-color);
+    transition: .3s 0s color ease-in-out;
+}
+
+.condition-of-use-link {
+    position: absolute;
+    top: 60px;
+    right: 25px;
+    left: unset;
+    max-width: unset;
+    font-size: 10px;    
+    letter-spacing: 3px;
+}
+
+.condition-of-use-link:hover {
+    color: var(--primary-color);
+    transition: .3s 0s color ease-in-out;
+}
+
+.signature {
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+    display: block;
+    font-size: 10px;
+    letter-spacing: 3px;
+    color: var(--lighter-color);
+    z-index: 10;
+}
+
+.signature span:last-child {
+    color: var(--dark-color);
+}
+
+#nav {
+    display: block;
+    top: 150px;
+    left: 25px;
+    position: absolute;
+    z-index: 3;
+    color: var(--lighter-color);
+    width: 300px;    
+}
+
+#nav .link {
+    margin-bottom: 2.34vh;
+    display: block;
+    color: var(--lighter-color);
+}
+
+#nav .link .active {
+    color: var(--primary-color);
+}
+
+#nav .link:hover * {
+    color: var(--primary-color);
+    transition: .3s 0s color ease-in-out;
+}
+
+#nav h3{
+    display: block;
+    font-size: 25px;
+    line-height: 1;
+    padding: 0;
+    margin: 0 0 1%;
+    font-weight: 400;    
+}
+
+#nav .short-text {
+    color: var(--grey-color);
+    font-size: 13px;
+    line-height: 1;
+    width: 80%;
+    display: block;    
+    margin: 0;
+    letter-spacing: 3px;
+}
+
+body:active{
+    transform: matrix3d(0.5,0,0.00,0,0.00,0.5,0.00,0,0,0,1,0,120,120,0,1);
+    -webkit-transform: matrix3d(0.5,0,0.00,0,0.00,0.5,0.00,0,0,0,1,0,120,120,0,1);    
+
+transform-origin: center center 0px; 
+transition: all 0.3s ease-in 0s;
+-webkit-transform-origin: center center 0px; 
+-webkit-transition: all 0.3s ease-in 0s;
+
+    
+
+}
+
+nav {
+    display: none !important;
 }

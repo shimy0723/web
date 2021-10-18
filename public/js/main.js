@@ -13,6 +13,7 @@ const signature = document.querySelector("#signature");
 let menuOpen = false;
 // Menu Button Click
 menuButton.addEventListener('click', ()=> {
+    /*
     if(!menuOpen){        
         menuButton.classList.add('opened');
         nav.classList.add('visible');
@@ -27,6 +28,12 @@ menuButton.addEventListener('click', ()=> {
         condition.classList.remove('opened');
         signature.classList.remove('opened');    
         menuOpen = false;    
-    }    
+    }    */
+    menuButton.classList.toggle('opened');
+    nav.classList.toggle('visible');
+    totalWrapperDiv.classList.toggle('opened');
+    condition.classList.toggle('opened');
+    signature.classList.toggle('opened'); 
+
 });
 

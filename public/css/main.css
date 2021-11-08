@@ -385,7 +385,9 @@ p {
 }
 
 
-#home-second-grid {
+#home-second-grid, 
+#home-third-grid, 
+#home-fourth-grid {
     color: var(--lighter-color);
     background: var(--dark-color);
     padding: 0;    
@@ -404,4 +406,20 @@ p {
     background-color: turquoise;
     width: 100%;
     height: 100%;
+}
+
+#home-third-grid .home-third-grid-container {
+    background-color: violet;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);    
+    height: 850px;
+    width: 100%;
+}
+
+#home-fourth-grid .home-fourth-grid-container {
+    background-color: yellow;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);    
+    height: 850px;
+    width: 100%;
 }

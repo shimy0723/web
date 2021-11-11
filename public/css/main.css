@@ -1073,7 +1073,7 @@ p {
 #product-second-grid-row .product-second-grid-row-container {
     height: 100vh;
     width: 100%;
-    background-color: var(--light-color);     
+    background-color: var(--lighter-color);     
 }
 
 #product-second-grid-row .product-second-grid-row-container .product-second-grid-row-content .second-grid-row-l {

@@ -6,7 +6,9 @@
   --lighter-color: #fff;
   --dark-color: #333;
   --darker-color: #191919;
-  --grey-color: #3a3944;
+  --grey-color: #BEBEBE;
+  --light-grey-color:#D3D3D3;
+  --dark-grey-color: #3a3944;
   --transparent-color: transparent;
 }
 
@@ -215,7 +217,7 @@ p {
 }
 
 .nav .short-text {
-  color: var(--grey-color);
+  color: var(--dark-grey-color);
   font-size: 17px;
   line-height: 1;
   width: 80%;
@@ -1197,3 +1199,135 @@ p {
     margin-top: auto;
     height: 90%;
 }
+
+/* Mixology Page */
+#mixology-showcase {
+  width: 100%;
+  height: 100vh;
+  color: var(--darker-color);
+  background: var(--light-grey-color);
+  padding: 2rem;
+  position: relative;
+}
+
+#mixology-showcase .mixology-container {
+  display: grid;
+  grid-template-rows: 0.3fr 1.7fr; 
+  margin: auto;
+  width: 100%;
+  height: 100%;
+}
+
+#mixology-showcase .mixology-container .mixology-container-t {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+#mixology-showcase .mixology-container .mixology-container-t span:first-child {
+  font-size: 100px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: -12px;
+}
+
+#mixology-showcase .mixology-container .mixology-container-t span:last-child {
+  font-size: 15px;
+  letter-spacing: 3px;
+}
+
+#mixology-showcase .mixology-container .mixology-container-b {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+
+#mixology-showcase .mixology-container .mixology-container-b .mixology-container-b-content{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); 
+  width: 100%;
+  height: 65%; 
+}
+
+#mixology-showcase .mixology-container .mixology-container-b .mixology-container-b-content > * {
+  display: flex;
+  margin: auto; 
+  width: 100%;
+  height: 100%;  
+}
+
+#mixology-showcase .mixology-container .mixology-container-b .mixology-container-b-content .mix-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  margin-right: 0;
+  margin-bottom: 35%;
+}
+
+#mixology-showcase .mixology-container .mixology-container-b .mixology-container-b-content .mix-btn a {
+  color: var(--darker-color);
+  height: 100px;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;  
+  margin: auto;
+  margin-top: 0;
+  padding-left: 10px;   
+  padding-right: 10px; 
+ 
+  border: solid 4px var(--primary-color);
+  transition: border linear 0.3s; 
+}
+
+#mixology-showcase .mixology-container .mixology-container-b .mixology-container-b-content .mix-btn a:hover {
+  border: solid 4px var(--darker-color);
+  transition: border linear 0.3s; 
+}
+
+#mixology-showcase .mixology-container .mixology-container-b .mixology-container-b-content .mix-btn a span:first-child,
+#mixology-showcase .mixology-container .mixology-container-b .mixology-container-b-content .mix-btn a span:nth-child(2) {
+  text-transform: uppercase;
+  font-size: 35px;
+  letter-spacing: 5px;
+  margin: 0;
+  margin-left: -4px;
+  margin-top: -7px;
+  margin-bottom: -10px;
+}
+
+#mixology-showcase .mixology-container .mixology-container-b .mixology-container-b-content .mix-btn a span:nth-child(3) {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 5px;  
+  margin: 0;
+  margin-left: -2px;
+}
+
+#mixology-showcase .mixology-container .mixology-container-b .mixology-container-b-content .mix-1 {
+  background: url(/img/soju-1.png) no-repeat center center/contain;   
+
+}
+#mixology-showcase .mixology-container .mixology-container-b .mixology-container-b-content .mix-2 {
+  background: url(/img/soju-2.png) no-repeat center center/contain;   
+
+}
+
+#mixology-showcase .mixology-container .mixology-container-b .mixology-container-b-content .mix-3 {
+  background: url(/img/soju-3.png) no-repeat center center/contain;   
+
+}
+
+#mixology-showcase .mixology-container .mixology-container-b .mixology-container-b-content .mix-4 {
+  background: url(/img/soju-4.png) no-repeat center center/contain;   
+}
+
+#mixology-showcase .mixology-container .mixology-container-b .mixology-container-b-content .mix-5 {
+  background: url(/img/soju-5.png) no-repeat center center/contain; 
+}
+

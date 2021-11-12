@@ -1923,9 +1923,9 @@ p {
   transition: all 0.4s ease-in-out;
 }
 
-#contact-container .contact-content .contact-form .success {
-  position: absolute;
-  top: 15%;
+#contact-container .success {
+  position: fixed;
+  bottom: -65%;
   right: 20px;
   background: rgb(50, 150, 84);
   height: 60px;
@@ -1940,40 +1940,31 @@ p {
   opacity: 0;
 }
 
-#contact-container .contact-content .contact-form .success.show {
+#contact-container .success.show {
   opacity: 1;
   pointer-events: auto;
 }
 
-#contact-container .contact-content .contact-form .success.alert {
+#contact-container .success.alert {
   opacity: 1;
   pointer-events: auto;
 }
 
-#contact-container .contact-content .contact-form .success_check {
+#contact-container .success_check {
   position: absolute;  
   left: 20px;
   font-size: 30px;
   color: var(--primary-color);
 }
 
-#contact-container .contact-content .contact-form .success_msg {
-  font-size: 20px;
+#contact-container .success_msg {
+  font-size: 25px;
   color: var(--darker-color);
-  margin: 0 25px;  
+  margin: 0;
+  margin-left: 40px;
 }
 
-#contact-container .contact-content .contact-form .success_close {
-  position: absolute;  
-  right: 30px;
-  font-size: 20px;
-}
-
-#contact-container .contact-content .contact-form .success_close:hover {
-  opacity: 0.6;
-}
-
-#contact-container .contact-content .contact-form .success.show {
+#contact-container .success.show {
   animation: show_slide 1s ease forwards;
 }
 
@@ -1992,7 +1983,7 @@ p {
   }
 }
 
-#contact-container .contact-content .contact-form .success.hide {
+#contact-container .success.hide {
   animation: hide_slide 1s ease forwards;
 }
 

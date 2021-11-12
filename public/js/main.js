@@ -64,25 +64,22 @@ capcha_btn.addEventListener('click', ()=> {
 const contact_form = document.querySelector("#contact_form");
 // Submit button
 const submit_btn = document.querySelector(".form_btn");
-// Close button
-const close_btn = document.querySelector(".success_close");
 // Success Div
 const success_div = document.querySelector(".success");
 
-contact_form.addEventListener('click', () =>{
-    success_div.classList.add('show');
-    success_div.classList.add('alert');
-    success_div.classList.remove('hide');
-    setTimeout(myFunction, 2000);
+contact_form.addEventListener('submit', (e) =>{
+    e.preventDefault();    
+    setTimeout(()=> {
+        success_div.classList.add('show');
+        success_div.classList.add('alert');
+        success_div.classList.remove('hide');
+        setTimeout(()=> {
+            success_div.classList.remove('show');
+            success_div.classList.add('hide');
+        }, 3000);
+    }, 500);   
+    setTimeout(() => {
+        location.reload();
+    }, 5000);
+     
 });
-
-function myFunction() {
-    success_div.classList.remove('show');
-    success_div.classList.add('hide');
-}
-
-// submit_btn.addEventListener('click', () =>{
-//     success_div.classList.remove('show');
-//     success_div.classList.add('hide');
-// });
-

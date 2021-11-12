@@ -37,3 +37,26 @@ menuButton.addEventListener('click', ()=> {
 
 });
 
+
+
+// Contact Page Capcha Output
+const capcha_output = document.querySelector("#capt");
+// Re-do button
+const capcha_btn = document.querySelector("#capt_btn");
+// Generate a capcha
+function generate_capcha() {
+    let txt = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    let code = "";
+    for (let i = 0; i <= 7; i++) {
+        code += txt.charAt(Math.floor(Math.random() * 63));        
+    }
+    capcha_output.innerHTML = code;
+}
+// Generates a capcha
+generate_capcha()
+
+// Generates a new capcha when clicked
+capcha_btn.addEventListener('click', ()=> {
+    generate_capcha()
+});
+

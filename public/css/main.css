@@ -1683,7 +1683,7 @@ p {
   font-size: 30px;
   text-transform: uppercase;
   color: var(--lighter-color);
-  background: var(--darker-color);
+  background: var(--primary-color);
   padding: 0px 15px 0px 15px;
   margin-bottom: 50px;
 }
@@ -1744,4 +1744,181 @@ p {
 
 .crafting-grid-row-4 .grid-row-4-content .crafting-g-r {
   background: url(/img/home-bg-soju.png) no-repeat center center/contain; 
+}
+
+/* Contact */
+#contact-container {
+  width: 100%;
+  height: 1750px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(/img/contact-bg.jpg) no-repeat center center/cover;  
+}
+
+#contact-container .contact-content {
+  width: 35%;
+  height: 90%;    
+  display: grid;
+  grid-template-rows: 0.3fr 1.7fr;
+}
+
+#contact-container .contact-content .contact-h {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--lighter-color);
+}
+
+#contact-container .contact-content .contact-h span:first-child {
+  font-size: 90px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  margin-bottom: -10px;
+  margin-top: -10px;
+}
+
+#contact-container .contact-content .contact-h span:not(:first-child) {
+  font-size: 25px;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+#contact-container .contact-content .contact-form {
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+  justify-self: flex-start;
+  margin-top: 30px;
+}
+
+#contact-container .contact-content .contact-form .input_field {
+  margin-bottom: 15px;
+  display: flex;
+}
+
+#contact-container .contact-content .contact-form .input_field label {
+  color: var(--lighter-color);
+  font-size: 25px;
+  font-weight: 500;
+  width: 130px;
+  height: 50px;  
+  margin-right: 10px;
+}
+
+#contact-container .contact-content .contact-form .input_field label.check {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  margin-top: 30px;
+}
+
+#contact-container .contact-content .contact-form .input_field select option { 
+  color: var(--darker-color);
+  font-size: 19px;
+  letter-spacing: 1px; 
+}
+
+#contact-container .contact-content .contact-form .input_field .input,
+#contact-container .contact-content .contact-form .input_field select,
+#contact-container .contact-content .contact-form .input_field .textarea{
+  width: 50%;
+  height: 60px;
+  background: var(--transparent-color);
+  outline: none;
+  border: 4px solid var(--primary-color);
+  border-radius: 3px;
+  padding: 8px 15px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  color: var(--lighter-color);
+  font-size: 17px;
+  transition: all 0.3s ease;
+}
+
+#contact-container .contact-content .contact-form .input_field .textarea {
+  height: 120px;
+  resize: none;
+}
+
+#contact-container .contact-content .contact-form .input_field #capt {
+  background: var(--transparent-color);
+  text-decoration: none;
+  width: 150px;
+  height: 50px;
+  border: none;
+  text-decoration: none;
+  box-shadow: none;
+  text-align: center;
+  font-size: 30px;
+  color: var(--lighter-color);
+  padding:0; 
+}
+
+#contact-container .contact-content .contact-form .code {
+  margin-top: -20px;
+}
+
+#contact-container .contact-content .contact-form .input_field #capt_btn {
+  font-size: 20px;
+  color: var(--lighter-color);
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+#contact-container .contact-content .contact-form .input_field #capt_btn:hover {
+  cursor: pointer;
+  font-size: 22px;
+}
+
+#contact-container .contact-content .contact-form .terms {
+  margin-bottom: 100px;
+}
+
+#contact-container .contact-content .contact-form .input_field p {  
+  width: 90%;
+  font-size: 25px;
+  letter-spacing: 1px;
+  line-height: 1.2;
+  color: var(--lighter-color);  
+}
+
+#contact-container .contact-content .contact-form .input_field p .highlight {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+#contact-container .contact-content .contact-form .input_field .form_btn {
+  width: 30%;
+  align-self: center;
+  justify-self: center;
+  margin: auto;
+  background-color: var(--primary-color);
+  border: none;
+  color: var(--lighter-color);  
+  padding: 25px 30px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 25px;
+  letter-spacing: 1px;
+  display: inline-block;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+
+#contact-container .contact-content .contact-form .input_field .form_btn:hover {
+  background-color: var(--lighter-color);
+  color: var(--darker-color);
+  transition: all 0.4s ease-in-out;
 }

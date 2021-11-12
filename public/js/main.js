@@ -71,12 +71,18 @@ const success_div = document.querySelector(".success");
 
 contact_form.addEventListener('click', () =>{
     success_div.classList.add('show');
-    // success_div.classList.add('alert');
-    // success_div.classList.remove('hide');
+    success_div.classList.add('alert');
+    success_div.classList.remove('hide');
+    setTimeout(myFunction, 2000);
 });
 
-submit_btn.addEventListener('click', () =>{
+function myFunction() {
     success_div.classList.remove('show');
     success_div.classList.add('hide');
-});
+}
+
+// submit_btn.addEventListener('click', () =>{
+//     success_div.classList.remove('show');
+//     success_div.classList.add('hide');
+// });
 

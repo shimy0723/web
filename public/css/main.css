@@ -1936,12 +1936,16 @@ p {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
+  overflow: hidden;  
   opacity: 0;
-  pointer-events: none;
 }
 
 #contact-container .contact-content .contact-form .success.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#contact-container .contact-content .contact-form .success.alert {
   opacity: 1;
   pointer-events: auto;
 }

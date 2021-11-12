@@ -1521,7 +1521,7 @@ p {
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 2px;
-  background: var(--darker-color);
+  background: var(--primary-color);
   color: var(--lighter-color);
   padding: 0px 10px 0px 10px;
   margin-bottom: 50px;

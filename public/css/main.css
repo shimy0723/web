@@ -1856,7 +1856,7 @@ p {
   text-decoration: none;
   box-shadow: none;
   text-align: center;
-  font-size: 30px;
+  font-size: 25px;
   color: var(--lighter-color);
   padding:0; 
 }
@@ -1865,7 +1865,9 @@ p {
   margin-top: -20px;
 }
 
-#contact-container .contact-content .contact-form .input_field #capt_btn {
+#contact-container .contact-content .contact-form .input_field #capt_btn,
+#contact-container .contact-content .contact-form .input_field #capt_btn_check, 
+#contact-container .contact-content .contact-form .input_field #capt_btn_result{
   font-size: 20px;
   color: var(--lighter-color);
   width: 40px;
@@ -1877,7 +1879,13 @@ p {
   margin: 0;
 }
 
-#contact-container .contact-content .contact-form .input_field #capt_btn:hover {
+#contact-container .contact-content .contact-form .input_field #capt_btn_result{
+  color: var(--primary-color);
+  opacity: 0;
+}
+
+#contact-container .contact-content .contact-form .input_field #capt_btn:hover,
+#contact-container .contact-content .contact-form .input_field #capt_btn_check:hover {
   cursor: pointer;
   font-size: 22px;
 }
@@ -1923,7 +1931,7 @@ p {
   transition: all 0.4s ease-in-out;
 }
 
-#contact-container .success {
+#contact-container .contact-form .success {
   position: fixed;
   bottom: -65%;
   right: 20px;
@@ -1940,31 +1948,31 @@ p {
   opacity: 0;
 }
 
-#contact-container .success.show {
+#contact-container .contact-form .success.show {
   opacity: 1;
   pointer-events: auto;
 }
 
-#contact-container .success.alert {
+#contact-container .contact-form .success.alert {
   opacity: 1;
   pointer-events: auto;
 }
 
-#contact-container .success_check {
+#contact-container .contact-form .success_check {
   position: absolute;  
   left: 20px;
   font-size: 30px;
   color: var(--primary-color);
 }
 
-#contact-container .success_msg {
-  font-size: 25px;
-  color: var(--darker-color);
+#contact-container .contact-form .success_msg {
+  font-size: 25x;
+  color: var(--dark-color);
   margin: 0;
   margin-left: 40px;
 }
 
-#contact-container .success.show {
+#contact-container .contact-form .success.show {
   animation: show_slide 1s ease forwards;
 }
 
@@ -1983,7 +1991,7 @@ p {
   }
 }
 
-#contact-container .success.hide {
+#contact-container .contact-form .success.hide {
   animation: hide_slide 1s ease forwards;
 }
 

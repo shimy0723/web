@@ -40,12 +40,14 @@
                     </div>
                     <div class="input_field">
                         <label>Please, enter the code below:*</label>
-                        <input type="text" class="input" required>
+                        <input type="text" class="input" id="capt_code" required>
                     </div>
                     <div class="input_field code">
                         <label></label>
                         <span id="capt"></span>
                         <span id="capt_btn"><i class="fas fa-redo"></i></span>
+                        <span id="capt_btn_check"><i class="fas fa-check"></i></span>
+                        <span id="capt_btn_result"></span>
                     </div>
                     <div class="input_field">
                         <label class="check">
@@ -68,16 +70,15 @@
                         </label> 
                         <p>By checking, you accept our <span class="highlight">Privacy and Cookie Notice</span> and <span class="highlight">Conditions of Use *</span></p>          
                     </div>
-                    <div class="input_field">
-                        <!-- <input type="submit" value="Submit" class="form_btn"> -->
+                    <div class="input_field">                       
                         <button class="form_btn" type="submit">Submit</button>
-                    </div>                    
+                    </div>     
+                    <div class="success">
+                        <span class="success_check"><i class="far fa-check-circle"></i></span>
+                        <span class="success_msg">Success: Your message sent successfully!</span>                       
+                    </div>               
                 </div>
             </form>            
-        </div>
-        <div class="success">
-            <span class="success_check"><i class="far fa-check-circle"></i></span>
-            <span class="success_msg">Success: Your message sent successfully!</span>                       
         </div>
     </div>
 </section>

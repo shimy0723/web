@@ -34,15 +34,29 @@ menuButton.addEventListener('click', ()=> {
     totalWrapperDiv.classList.toggle('opened');
     condition.classList.toggle('opened');
     signature.classList.toggle('opened'); 
-
 });
 
-
-
-// Contact Page Capcha Output
+// Contact page capcha output
 const capcha_output = document.querySelector("#capt");
-// Re-do button
-const capcha_btn = document.querySelector("#capt_btn");
+// Capcha re-do button
+const capcha_redo_btn = document.querySelector("#capt_btn");
+// Capcha check button
+const capcha_check_btn = document.querySelector("#capt_btn_check");
+// Capcha result button
+const capcha_reult_btn = document.querySelector("#capt_btn_result");
+
+// Capcha code 
+let capcha_code = '';
+
+// Generates a capcha
+generate_capcha()
+
+// Generates a new capcha when clicked
+capcha_redo_btn.addEventListener('click', ()=> {
+    generate_capcha()
+    capcha_reult_btn.style.opacity = 0;
+});
+
 // Generate a capcha
 function generate_capcha() {
     let txt = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -51,13 +65,24 @@ function generate_capcha() {
         code += txt.charAt(Math.floor(Math.random() * 63));        
     }
     capcha_output.innerHTML = code;
+    capcha_code = code;
 }
-// Generates a capcha
-generate_capcha()
 
-// Generates a new capcha when clicked
-capcha_btn.addEventListener('click', ()=> {
-    generate_capcha()
+// Checks if capcha code is identical
+capcha_check_btn.addEventListener('click', ()=> {   
+    // Capcha code input
+    let capcha_input = document.querySelector("#capt_code").value;    
+
+    if(capcha_input == capcha_code){        
+        capcha_reult_btn.style.opacity = 1;     
+        capcha_reult_btn.innerHTML = `<i class="fas fa-thumbs-up"></i>`;        
+        capcha_reult_btn.style.color = "green"; 
+    }
+    else {
+        capcha_reult_btn.style.opacity = 1;
+        capcha_reult_btn.innerHTML = `<i class="fas fa-thumbs-down"></i>`;        
+        capcha_reult_btn.style.color = "red";
+    }
 });
 
 // Form

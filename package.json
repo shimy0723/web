@@ -1,0 +1,29 @@
+{
+  "name": "web-project",
+  "version": "1.0.0",
+  "description": "Web Project 2021 S2",
+  "main": "app.js",
+  "scripts": {
+    "start": "SET NODE_ENV=production & node app",
+    "dev": "nodemon app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shimy0723/web.git"
+  },
+  "author": "Joe Shim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shimy0723/web/issues"
+  },
+  "homepage": "https://github.com/shimy0723/web#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}

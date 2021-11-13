@@ -115,11 +115,11 @@ contact_form.addEventListener('submit', (e) =>{
             setTimeout(()=> {
                 success_div.classList.remove('show');
                 success_div.classList.add('hide');
-            }, 3000);
-        }, 500);   
+            }, 1000);
+        }, 300);   
         setTimeout(() => {
             location.reload();
-        }, 5000);
+        }, 3000);
     }
     else {
         window.alert('SORRY ROBOTS CANNOT DRINK SOJU!');

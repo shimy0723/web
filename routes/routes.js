@@ -31,6 +31,9 @@ router.get('/contact',(req,res) => {
     res.render('contact');
 })
 
-
+// 404-Page
+router.use((req,res,next) => {
+    res.status(404).render('404');
+})
 
 module.exports = router;

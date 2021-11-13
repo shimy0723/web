@@ -36,7 +36,7 @@ menuButton.addEventListener('click', ()=> {
     signature.classList.toggle('opened'); 
 });
 
-// Contact page capcha output
+// Capcha output
 const capcha_output = document.querySelector("#capt");
 // Capcha re-do button
 const capcha_redo_btn = document.querySelector("#capt_btn");
@@ -54,8 +54,12 @@ generate_capcha()
 
 // Generates a new capcha when clicked
 capcha_redo_btn.addEventListener('click', ()=> {
+    // Capcha input    
+    let capcha_input = document.querySelector("#capt_code");
+
     generate_capcha()
     capcha_reult_btn.style.opacity = 0;
+    capcha_input.value ="";
 });
 
 // Generate a capcha
@@ -113,7 +117,7 @@ contact_form.addEventListener('submit', (e) =>{
         }, 5000);
     }
     else {
-        window.alert('SORRY ROBOTS CANNOT DRINK SOJU!')
+        window.alert('SORRY ROBOTS CANNOT DRINK SOJU!');
         location.reload();
     }     
 });

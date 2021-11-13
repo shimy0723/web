@@ -44,6 +44,8 @@ const capcha_redo_btn = document.querySelector("#capt_btn");
 const capcha_check_btn = document.querySelector("#capt_btn_check");
 // Capcha result button
 const capcha_reult_btn = document.querySelector("#capt_btn_result");
+// Capcha code correct
+let capcha_answered = false;
 // Capcha verified
 let capcha_verified = false;
 // Capcha code 
@@ -54,12 +56,14 @@ generate_capcha()
 
 // Generates a new capcha when clicked
 capcha_redo_btn.addEventListener('click', ()=> {
-    // Capcha input    
-    let capcha_input = document.querySelector("#capt_code");
+    if(capcha_verified == false && capcha_answered == false){
+        // Capcha input    
+        let capcha_input = document.querySelector("#capt_code");
 
-    generate_capcha()
-    capcha_reult_btn.style.opacity = 0;
-    capcha_input.value ="";
+        generate_capcha()
+        capcha_reult_btn.style.opacity = 0;
+        capcha_input.value ="";
+    }
 });
 
 // Generate a capcha
@@ -83,13 +87,14 @@ capcha_check_btn.addEventListener('click', ()=> {
         capcha_reult_btn.innerHTML = `<i class="fas fa-thumbs-up"></i>`;        
         capcha_reult_btn.style.color = "green"; 
         window.alert('CONGRATUATION! IT SEEMS LIKE YOU ARE NOT A ROBOT');
-        capcha_verified = true;
+        capcha_verified = true;        
     }
     else {
         capcha_reult_btn.style.opacity = 1;
         capcha_reult_btn.innerHTML = `<i class="fas fa-thumbs-down"></i>`;        
         capcha_reult_btn.style.color = "red";
         window.alert('OOPS! IT SEEMS LIKE YOU ARE A ROBOT');
+        capcha_verified = false;        
     }
 });
 

@@ -15,7 +15,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: border-box;  
 }
 
 body {
@@ -54,7 +54,7 @@ p {
 .container {
   max-width: var(--max-width);
   margin: auto;
-  overflow: hidden;
+  overflow: hidden;  
 }
 
 .linkBtn {
@@ -2225,12 +2225,15 @@ p {
 }
 
 /* Sense */
-/* #sense-container {
-  
-} */
+#sense-container {
+  overflow: hidden !important;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+} 
 
 #sense-container section {
   height: 100vh !important; 
+  overflow: hidden !important;
 }
 
 #sense-container section:last-child .content,

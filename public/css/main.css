@@ -2225,12 +2225,12 @@ p {
 }
 
 /* Sense */
-#sense-container {
-  scroll-snap-type: mandatory x;
-}
+/* #sense-container {
+  
+} */
 
 #sense-container section {
-  height: 100vh !important;
+  height: 100vh !important; 
 }
 
 #sense-container section:last-child .content,

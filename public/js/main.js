@@ -44,7 +44,8 @@ const capcha_redo_btn = document.querySelector("#capt_btn");
 const capcha_check_btn = document.querySelector("#capt_btn_check");
 // Capcha result button
 const capcha_reult_btn = document.querySelector("#capt_btn_result");
-
+// Capcha verified
+let capcha_verified = false;
 // Capcha code 
 let capcha_code = '';
 
@@ -61,7 +62,7 @@ capcha_redo_btn.addEventListener('click', ()=> {
 function generate_capcha() {
     let txt = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
     let code = "";
-    for (let i = 0; i <= 7; i++) {
+    for (let i = 0; i <= 5; i++) {
         code += txt.charAt(Math.floor(Math.random() * 63));        
     }
     capcha_output.innerHTML = code;
@@ -77,11 +78,14 @@ capcha_check_btn.addEventListener('click', ()=> {
         capcha_reult_btn.style.opacity = 1;     
         capcha_reult_btn.innerHTML = `<i class="fas fa-thumbs-up"></i>`;        
         capcha_reult_btn.style.color = "green"; 
+        window.alert('CONGRATUATION! IT SEEMS LIKE YOU ARE NOT A ROBOT');
+        capcha_verified = true;
     }
     else {
         capcha_reult_btn.style.opacity = 1;
         capcha_reult_btn.innerHTML = `<i class="fas fa-thumbs-down"></i>`;        
         capcha_reult_btn.style.color = "red";
+        window.alert('OOPS! IT SEEMS LIKE YOU ARE A ROBOT');
     }
 });
 
@@ -94,17 +98,22 @@ const success_div = document.querySelector(".success");
 
 contact_form.addEventListener('submit', (e) =>{
     e.preventDefault();    
-    setTimeout(()=> {
-        success_div.classList.add('show');
-        success_div.classList.add('alert');
-        success_div.classList.remove('hide');
+    if(capcha_verified) {
         setTimeout(()=> {
-            success_div.classList.remove('show');
-            success_div.classList.add('hide');
-        }, 3000);
-    }, 500);   
-    setTimeout(() => {
+            success_div.classList.add('show');
+            success_div.classList.add('alert');
+            success_div.classList.remove('hide');
+            setTimeout(()=> {
+                success_div.classList.remove('show');
+                success_div.classList.add('hide');
+            }, 3000);
+        }, 500);   
+        setTimeout(() => {
+            location.reload();
+        }, 5000);
+    }
+    else {
+        window.alert('SORRY ROBOTS CANNOT DRINK SOJU!')
         location.reload();
-    }, 5000);
-     
+    }     
 });

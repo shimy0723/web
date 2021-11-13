@@ -4,9 +4,80 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>7th Sense Gin | Soju</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/mobile.css">
+    <title>7th Sense Korean Gin | Soju</title>
 </head>
-<body>
-    <%- body %>
+<body>    
+    <!-- Home Logo -->
+    <a href="/" class="logo">
+        <img src="img/logo.png" alt="Logo Image">
+    </a>
+
+    <!-- Social Media Links -->
+    <div class="social">
+        <span class="label">follow us:</span>
+        <a href="https://www.facebook.com/%EC%B0%B8%EC%9D%B4%EC%8A%AC-49743181575" class="fb" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.facebook.com/%EC%B0%B8%EC%9D%B4%EC%8A%AC-49743181575" class="fb" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.facebook.com/%EC%B0%B8%EC%9D%B4%EC%8A%AC-49743181575" class="fb" target="_blank"><i class="fab fa-instagram"></i></a>       
+    </div>
+
+    <!-- Menu button -->
+    <div id="open-menu" class="menu-button">
+        <div class="menu-button_burger"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="nav" class="nav">
+        <!-- Home -->
+        <a href="/" class="link">
+            <h3>Home</h3>
+            <p class="short-text">It's Soju time</p>
+        </a>    
+        <!-- Product -->
+        <a href="/product" class="link">
+            <h3>Product</h3>
+            <p class="short-text">Original recipe</p>
+        </a>    
+        <!-- Mixology -->
+        <a href="/mixology" class="link">
+            <h3>Mixology</h3>
+            <p class="short-text">Sonsationally Exciting</p>
+        </a>    
+        <!-- Crafting -->
+        <a href="/crafting" class="link">
+            <h3>Crafting</h3>
+            <p class="short-text">Technology, Destylery, Balance</p>
+        </a>    
+        <!-- Sense -->
+        <a href="/sense" class="link">
+            <h3>Sense of Korea</h3>
+            <p class="short-text">See, Hear, Touch, Smell, Taste, Instuition</p>
+        </a>   
+         <!-- Contact -->
+        <a href="/contact" class="link">
+            <h3>Contact</h3>
+            <p class="short-text">Keep in touch</p>
+        </a>    
+    </nav>
+
+    <!-- Main Content -->
+    <div id="total-wrapper" class="total-wrapper animate">
+        <div id="container" class="container">
+            <%- body %>            
+        </div>
+    </div>
+
+    <!-- Web Design Signature -->
+    <div id="signature" class="signature">
+        <span>design replicated by </span><span>joe</span>
+    </div>
+
+    <!-- Condition of Use -->
+    <a id="condition-of-use-link" class="condition-of-use-link" href="https://www.alcohol.org.nz/alcohol-management-laws/licensing-local-policies/alcohol-licensing" target="_blank">Condition of Use</a>
+
+    <script src="js/main.js"></script>
 </body>
 </html>

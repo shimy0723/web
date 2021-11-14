@@ -4,7 +4,7 @@ const expressLayouts = require('express-ejs-layouts');
 const routes = require('./routes/routes');
 
 // Load env vars
-dotenv.config({ path: './config/config.env' });
+dotenv.config({ path: './config/.env' });
 
 const app = express();
 const PORT =process.env.PORT || 5000;
@@ -16,7 +16,7 @@ app.use('/js', express.static(__dirname + 'public/js'));
 app.use('/img', express.static(__dirname + 'public/img'));
 app.use('/mp4', express.static(__dirname + 'public/mp4'));
 
-// Set Templating Engine
+// Set Template Engine
 app.use(expressLayouts);
 app.set('view engine', 'ejs');
 
@@ -25,4 +25,3 @@ app.use(routes);
 
 // Listen For Requests
 app.listen(PORT, console.log(`Server running in ${process.env.NODE_ENV} mode on port ${PORT}`));
-

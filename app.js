@@ -4,7 +4,7 @@ const expressLayouts = require('express-ejs-layouts');
 const routes = require('./routes/routes');
 
 // Load env vars
-dotenv.config({ path: './config/.env' });
+dotenv.config({ path: './.env' });
 
 const app = express();
 const PORT =process.env.PORT || 5000;

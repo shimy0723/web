@@ -1,39 +1,15 @@
+// Section
 const sections = document.querySelector("section");
 
+// First section: see
 const see = document.querySelector(".nav-tag span:first-child");
+// Second section: hear
 const hear = document.querySelector(".nav-tag span:nth-child(2)");
+// Third section: touch
 const touch = document.querySelector(".nav-tag span:nth-child(3)");
+// Fourth section: smell
 const smell = document.querySelector(".nav-tag span:nth-child(4)");
+// Fifth section: taste
 const taste = document.querySelector(".nav-tag span:nth-child(5)");
+// Sixth section: intuition
 const intuition = document.querySelector(".nav-tag span:last-child");
-
-let index = 0;
-
-see.addEventListener('click', () => {
-    window.alert('see');
-})
-
-hear.addEventListener('click', () => {
-    index++;
-    sections.foreach((section,i) => {
-        if (i == index) {
-            section.scrollIntoView({behavior: 'smooth'});
-        }
-    })
-})
-
-touch.addEventListener('click', () => {
-    window.alert('touch');
-})
-
-smell.addEventListener('click', () => {
-    window.alert('smell');
-})
-
-taste.addEventListener('click', () => {
-    window.alert('taste');
-})
-
-intuition.addEventListener('click', () => {
-    window.alert('intuition');
-})

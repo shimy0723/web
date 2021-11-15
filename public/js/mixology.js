@@ -11,6 +11,8 @@ fetch('/joeApiRoute)
 
 */
 
+// Fetching a list of 10 random images related to drink query from unsplash,
+// Then the response will be convereted into JSON format and then will be applied as the background images for each mix-image devs
 function fetchData() {
     fetch(`https://api.unsplash.com/search/photos?query=drink&per_page=10&orientation=portrait&client_id=${API_KEY}`)
     .then(res => res.json())
@@ -22,6 +24,7 @@ function fetchData() {
     });
 }
 
+// When each of the mix-btn is cliked, their background image will change randomly with the fetched images
 mix_btn.forEach(btn => {
     btn.addEventListener('click', (e) => {
         e.preventDefault();

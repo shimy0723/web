@@ -1,15 +1,10 @@
-// API_KEY
-const API_KEY = "W1sRgUiSUi4fNh03DnMn6B8gXmmk-R2mF_j01W8Cct4"
-
 // Mix button
 const mix_btn = document.querySelectorAll(".mix-btn a");
 // Mix image
 const mix_img = document.querySelectorAll(".mix-img");
 
-/*
-fetch('/joeApiRoute)
-
-*/
+// API_KEY
+const API_KEY = "W1sRgUiSUi4fNh03DnMn6B8gXmmk-R2mF_j01W8Cct4"
 
 // Fetching a list of 10 random images related to drink query from unsplash,
 // Then the response will be convereted into JSON format and then will be applied as the background images for each mix-image devs
@@ -24,7 +19,7 @@ function fetchData() {
     });
 }
 
-// When each of the mix-btn is cliked, their background image will change randomly with the fetched images
+// When each of the mix-btn in mixology page is cliked, their background image will change randomly with the fetched images
 mix_btn.forEach(btn => {
     btn.addEventListener('click', (e) => {
         e.preventDefault();

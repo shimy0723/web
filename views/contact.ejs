@@ -7,6 +7,7 @@
                 <span>Contact Us</span>
                 <span>Please fill in the fields below.</span>
                 <span>* Required Fields</span>
+                <span class="joke"></span>
             </div>
             <form id="contact_form">
                 <div class="contact-form">
@@ -14,10 +15,10 @@
                         <label>Attention:*</label> 
                         <select class="select" required>
                             <option value="default" hidden>-</option>
-                            <option value="export">Export</option>
-                            <option value="marketing">Marketing</option>
-                            <option value="production">Production</option>
-                            <option value="office">Office</option>
+                            <option value="export" class="joke">Export</option>
+                            <option value="marketing" class="joke">Marketing</option>
+                            <option value="production" class="joke">Production</option>
+                            <option value="office" class="joke">Office</option>
                         </select>
                     </div>
                     <div class="input_field">
@@ -34,7 +35,8 @@
                     </div>
                     <div class="input_field">
                         <label>Message:*</label>
-                        <textarea class="textarea" required></textarea>
+                        <textarea class="textarea joke" required>                            
+                        </textarea>
                     </div>
                     <div class="input_field">
                         <label>Attach file:</label>

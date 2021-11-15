@@ -11,7 +11,8 @@ const signature = document.querySelector("#signature");
 
 // Menu Closed
 let menuOpen = false;
-// Menu Button Click
+
+// Nav links will appear when the menu button is clicked
 menuButton.addEventListener('click', ()=> {
     /*
     if(!menuOpen){        
@@ -29,6 +30,7 @@ menuButton.addEventListener('click', ()=> {
         signature.classList.remove('opened');    
         menuOpen = false;    
     }    */
+    
     menuButton.classList.toggle('opened');
     nav.classList.toggle('visible');
     totalWrapperDiv.classList.toggle('opened');

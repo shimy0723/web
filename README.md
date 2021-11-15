@@ -8,3 +8,6 @@ When you see a message on your terminal saying:
 "Server running in production  mode on port 5000",
 Go to localhost:5000
 It's Soju Time!
+
+heroku deployment site:
+https://web-2021-s2-assignment.herokuapp.com/

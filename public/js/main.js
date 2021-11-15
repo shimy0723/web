@@ -35,7 +35,3 @@ menuButton.addEventListener('click', ()=> {
     condition.classList.toggle('opened');
     signature.classList.toggle('opened'); 
 });
-
-function fetchData() {
-    
-}

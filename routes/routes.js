@@ -36,4 +36,14 @@ router.use((req,res,next) => {
     res.status(404).render('404');
 })
 
+router.get("/api", (req,res) => {
+
+    /*
+        API key here - hidden from people
+        node-fetch the unsplash api....
+        return the json data
+    */
+
+})
+
 module.exports = router;

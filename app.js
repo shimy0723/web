@@ -4,7 +4,7 @@ const expressLayouts = require('express-ejs-layouts');
 const routes = require('./routes/routes');
 
 // Load env vars
-dotenv.config({ path: './.env' });
+dotenv.config({ path: './config.env' });
 
 const app = express();
 const PORT =process.env.PORT || 5000;
@@ -15,16 +15,6 @@ app.use('/css', express.static(__dirname + 'public/css'));
 app.use('/js', express.static(__dirname + 'public/js'));
 app.use('/img', express.static(__dirname + 'public/img'));
 app.use('/mp4', express.static(__dirname + 'public/mp4'));
-
-app.get("/joeApiRoute", (req,res) => {
-
-    /*
-        API key here - hidden from people
-        node-fetch the unsplash api....
-        return the json data
-    */
-
-})
 
 // Set Template Engine
 app.use(expressLayouts);

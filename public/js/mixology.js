@@ -6,6 +6,11 @@ const mix_btn = document.querySelectorAll(".mix-btn a");
 // Mix image
 const mix_img = document.querySelectorAll(".mix-img");
 
+/*
+fetch('/joeApiRoute)
+
+*/
+
 function fetchData() {
     fetch(`https://api.unsplash.com/search/photos?query=drink&per_page=10&orientation=portrait&client_id=${API_KEY}`)
     .then(res => res.json())
@@ -16,8 +21,6 @@ function fetchData() {
         });
     });
 }
-
-fetchData();
 
 mix_btn.forEach(btn => {
     btn.addEventListener('click', (e) => {

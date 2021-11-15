@@ -61,7 +61,7 @@ const GIF_API_KEY = "TbRP6TwW7tDXpTkFEeA2FLGO5lN4IIHD"
 const logo = document.querySelector(".secret_logo");
 // Changes the main logo with a scret logo
 function fetchGifs() {
-    fetch(`https://api.giphy.com/v1/gifs/search?api_key=${GIF_API_KEY}&q=rick?astly&limit=1&offset=0&rating=g&lang=en`)
+    fetch(`https://api.giphy.com/v1/gifs/search?api_key=${GIF_API_KEY}&q=chuck?norris&limit=1&offset=0&rating=g&lang=en`)
     .then(res => res.json())
     .then(data => {
         const gif = data.data[0].images.downsized.url;

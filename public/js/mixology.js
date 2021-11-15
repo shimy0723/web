@@ -22,13 +22,6 @@ fetchData();
 mix_btn.forEach(btn => {
     btn.addEventListener('click', (e) => {
         e.preventDefault();
-        fetch(`https://api.unsplash.com/search/photos?query=drink&per_page=10&orientation=portrait&client_id=${API_KEY}`)
-        .then(res => res.json())
-        .then(data => {
-            mix_img.forEach(img => {
-                const num = Math.floor(Math.random() * 10) + 1;
-                img.style.background = `url("${data.results[num].urls.regular}") no-repeat center center/contain`;
-            });
-        });
+        fetchData();
     })
 });

@@ -16,6 +16,16 @@ app.use('/js', express.static(__dirname + 'public/js'));
 app.use('/img', express.static(__dirname + 'public/img'));
 app.use('/mp4', express.static(__dirname + 'public/mp4'));
 
+app.get("/joeApiRoute", (req,res) => {
+
+    /*
+        API key here - hidden from people
+        node-fetch the unsplash api....
+        return the json data
+    */
+
+})
+
 // Set Template Engine
 app.use(expressLayouts);
 app.set('view engine', 'ejs');

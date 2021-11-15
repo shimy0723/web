@@ -22,8 +22,6 @@ function fetchData() {
     });
 }
 
-fetchData();
-
 mix_btn.forEach(btn => {
     btn.addEventListener('click', (e) => {
         e.preventDefault();

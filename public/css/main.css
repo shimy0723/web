@@ -15,7 +15,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;  
+  box-sizing: border-box;
 }
 
 body {
@@ -51,12 +51,12 @@ p {
 }
 
 /* Utility */
-.container {  
+.container {
   margin: auto;
-  overflow: hidden;  
+  overflow: hidden;
 }
 
-
+/* Link btn */
 .linkBtn {
   background: transparent;
   border: 8px solid var(--primary-color);
@@ -71,6 +71,7 @@ p {
   transition: border linear 0.3s;
 }
 
+/* Link btn hover */
 .linkBtn:hover {
   border: 8px solid var(--lighter-color);
   transition: border linear 0.3s;
@@ -216,6 +217,7 @@ p {
   opacity: 0;
 }
 
+/* Navigtaion div animation */
 .nav.visible .link {
   animation: appear 0.5s forwards ease 1s;
 }
@@ -231,10 +233,12 @@ p {
   }
 }
 
+/* Navigation color when active */
 .nav .link .active {
   color: var(--primary-color);
 }
 
+/* Navigation link hover */
 .nav .link:hover * {
   color: var(--primary-color);
   transition: 0.3s 0s color ease-in-out;
@@ -330,6 +334,7 @@ p {
   top: 144px;
 }
 
+/* Total wraper container animation */
 .total-wrapper {
   overflow-y: auto;
   overflow-x: hidden;
@@ -535,7 +540,7 @@ p {
 }
 
 /* Home page 1st section product page btn span */
-#home-showcase .home-container .grid-left .grid-middle span{
+#home-showcase .home-container .grid-left .grid-middle span {
   color: var(--lighter-color);
   font-size: 90px;
   margin-top: -30px;
@@ -646,7 +651,7 @@ p {
   margin-right: auto;
 }
 
-
+/* Home sections */
 #home-second-grid-row,
 #home-third-grid-row,
 #home-fourth-grid-row {
@@ -657,6 +662,7 @@ p {
   position: relative;
 }
 
+/* Home 2nd section container */
 #home-second-grid-row .home-second-grid-row-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -664,12 +670,7 @@ p {
   width: 100%;
 }
 
-#home-second-grid-row
-  .home-second-grid-row-container
-  .home-second-grid-row-left::before {
-  content: '';
-}
-
+/* Home 2nd section left div */
 #home-second-grid-row
   .home-second-grid-row-container
   .home-second-grid-row-left {
@@ -683,6 +684,7 @@ p {
   justify-content: center;
 }
 
+/* Home 2nd section left div btn div */
 #home-second-grid-row
   .home-second-grid-row-container
   .home-second-grid-row-left
@@ -694,6 +696,7 @@ p {
   transition: border linear 0.3s;
 }
 
+/* Home 2nd section left btn div hover */
 #home-second-grid-row
   .home-second-grid-row-container
   .home-second-grid-row-left
@@ -702,6 +705,7 @@ p {
   transition: border linear 0.3s;
 }
 
+/* Home 2nd section left 2nd btn div */
 #home-second-grid-row
   .home-second-grid-row-container
   .home-second-grid-row-left
@@ -714,6 +718,7 @@ p {
   align-items: flex-start;
 }
 
+/* Home 2nd section left div btn span */
 #home-second-grid-row
   .home-second-grid-row-container
   .home-second-grid-row-left
@@ -738,6 +743,7 @@ p {
   margin: 0;
 }
 
+/* Home 2nd section left div btn span 'of' */
 #home-second-grid-row
   .home-second-grid-row-container
   .home-second-grid-row-left
@@ -747,6 +753,7 @@ p {
   font-size: 30px;
 }
 
+/* Home 2nd section btn span except the last one */
 #home-second-grid-row
   .home-second-grid-row-container
   .home-second-grid-row-left
@@ -756,6 +763,7 @@ p {
   margin-bottom: -75px;
 }
 
+/* Home 2nd section left description div */
 #home-second-grid-row
   .home-second-grid-row-container
   .home-second-grid-row-left
@@ -769,6 +777,7 @@ p {
   align-items: center;
 }
 
+/* Home 2nd section left div descrition div span */
 #home-second-grid-row
   .home-second-grid-row-container
   .home-second-grid-row-left
@@ -781,6 +790,7 @@ p {
   text-transform: uppercase;
 }
 
+/* Home 2nd section right div */
 #home-second-grid-row
   .home-second-grid-row-container
   .home-second-grid-row-right {
@@ -791,6 +801,7 @@ p {
   height: 100%;
 }
 
+/* Home 2nd section right div grid left */
 #home-second-grid-row
   .home-second-grid-row-container
   .home-second-grid-row-right
@@ -805,6 +816,7 @@ p {
   color: var(--darker-color);
 }
 
+/* Home 2nd section right div left grid btn div */
 #home-second-grid-row
   .home-second-grid-row-container
   .home-second-grid-row-right
@@ -817,6 +829,7 @@ p {
   margin-bottom: 25px;
 }
 
+/* Home 2nd section right div grid left btn a link */
 #home-second-grid-row
   .home-second-grid-row-container
   .home-second-grid-row-right
@@ -835,6 +848,7 @@ p {
   transition: border linear 0.3s;
 }
 
+/* Home 2nd section right div grid left btn a link hover */
 #home-second-grid-row
   .home-second-grid-row-container
   .home-second-grid-row-right
@@ -845,6 +859,7 @@ p {
   transition: border linear 0.3s;
 }
 
+/* Home 2nd section right div grid left btn a link upper part */
 #home-second-grid-row
   .home-second-grid-row-container
   .home-second-grid-row-right
@@ -863,6 +878,7 @@ p {
   margin-top: -20px;
 }
 
+/* Home 2nd section right div grid left btn a link lower part */
 #home-second-grid-row
   .home-second-grid-row-container
   .home-second-grid-row-right
@@ -874,6 +890,7 @@ p {
   grid-template-columns: 1.45fr 0.65fr;
 }
 
+/* Home 2nd section right div grid left btn a link lover part left div */
 #home-second-grid-row
   .home-second-grid-row-container
   .home-second-grid-row-right
@@ -894,6 +911,7 @@ p {
   margin-left: 0;
 }
 
+/* Home 2nd section right div grid left btn a link lover part left div 3rd span */
 #home-second-grid-row
   .home-second-grid-row-container
   .home-second-grid-row-right
@@ -907,6 +925,7 @@ p {
   color: var(--lighter-color);
 }
 
+/* Home 2nd section right div grid left btn a link lower part right div */
 #home-second-grid-row
   .home-second-grid-row-container
   .home-second-grid-row-right
@@ -918,6 +937,7 @@ p {
   background: url(/img/home-bg-soju-btn.png) no-repeat center center/cover;
 }
 
+/* Home 2nd section right div grid left btn a link lower part right div description div */
 #home-second-grid-row
   .home-second-grid-row-container
   .home-second-grid-row-right
@@ -928,6 +948,7 @@ p {
   height: 80px;
 }
 
+/* Home 2nd section right div grid left btn a link lower part description div span */
 #home-second-grid-row
   .home-second-grid-row-container
   .home-second-grid-row-right
@@ -943,6 +964,7 @@ p {
   margin-left: 10px;
 }
 
+/* Home 2nd section right div left grid */
 #home-second-grid-row
   .home-second-grid-row-container
   .home-second-grid-row-right
@@ -951,6 +973,7 @@ p {
   border-radius: 10%;
 }
 
+/* Home 3rd section container  */
 #home-third-grid-row .home-third-grid-row-container {
   display: grid;
   grid-template-columns: 1.2fr 0.6fr 1.2fr;
@@ -959,12 +982,14 @@ p {
   width: 100%;
 }
 
+/* Home 3rd section container grid */
 #home-third-grid-row .home-third-grid-row-container .home-third-grid-row-left,
 #home-third-grid-row .home-third-grid-row-container .home-third-grid-row-right {
   display: flex;
   flex-direction: column;
 }
 
+/* Home 3rd section left div mixology div */
 #home-third-grid-row
   .home-third-grid-row-container
   .home-third-grid-row-left
@@ -977,12 +1002,14 @@ p {
   align-items: center;
 }
 
+/* Home 3rd section center div */
 #home-third-grid-row
   .home-third-grid-row-container
   .home-third-grid-row-center {
   background: url(/img/home-bg-soju.png) no-repeat center center/contain;
 }
 
+/* Home 3rd section right div coctail div*/
 #home-third-grid-row
   .home-third-grid-row-container
   .home-third-grid-row-right
@@ -998,6 +1025,7 @@ p {
   align-items: center;
 }
 
+/*  Home 3rd section right div coctail div headers */
 #home-third-grid-row
   .home-third-grid-row-container
   .home-third-grid-row-right
@@ -1009,6 +1037,7 @@ p {
   letter-spacing: 6px;
 }
 
+/*  Home 3rd section right div coctail div header2 */
 #home-third-grid-row
   .home-third-grid-row-container
   .home-third-grid-row-right
@@ -1021,6 +1050,7 @@ p {
   margin-bottom: 30px;
 }
 
+/* Home 3rd section right div coctail div link btn */
 #home-third-grid-row
   .home-third-grid-row-container
   .home-third-grid-row-right
@@ -1034,6 +1064,7 @@ p {
   transition: border linear 0.3s;
 }
 
+/*  Home 3rd section right div coctail div link btn hover */
 #home-third-grid-row
   .home-third-grid-row-container
   .home-third-grid-row-right
@@ -1051,6 +1082,7 @@ p {
   width: 100%;
 }
 
+/* Home 4th section container content */
 #home-fourth-grid-row
   .home-fourth-grid-row-container
   .home-fourth-grid-row-content {
@@ -1065,6 +1097,7 @@ p {
   width: 40%;
 }
 
+/* Home 4th section container content header */
 #home-fourth-grid-row
   .home-fourth-grid-row-container
   .home-fourth-grid-row-content
@@ -1076,6 +1109,7 @@ p {
   margin-top: -90px;
 }
 
+/*  Home 4th section container content header2 */
 #home-fourth-grid-row
   .home-fourth-grid-row-container
   .home-fourth-grid-row-content
@@ -1088,6 +1122,7 @@ p {
   margin-bottom: 20px;
 }
 
+/*  Home 4th section container content header3 */
 #home-fourth-grid-row
   .home-fourth-grid-row-container
   .home-fourth-grid-row-content
@@ -1098,6 +1133,7 @@ p {
   margin-bottom: 50px;
 }
 
+/*  Home 4th section contact btn */
 #home-fourth-grid-row
   .home-fourth-grid-row-container
   .home-fourth-grid-row-content
@@ -1112,6 +1148,7 @@ p {
   transition: border linear 0.3s;
 }
 
+/*  Home 4th section contact btn hover */
 #home-fourth-grid-row
   .home-fourth-grid-row-container
   .home-fourth-grid-row-content
@@ -1120,8 +1157,9 @@ p {
   transition: border linear 0.3s;
 }
 
-/* Product */
+/* Product Page*/
 
+/* Porduct showcase, 1st section */
 #product-showcase {
   color: var(--lighter-color);
   background: var(--dark-color);
@@ -1129,6 +1167,7 @@ p {
   position: relative;
 }
 
+/* Product 1st section background */
 #product-showcase:before {
   content: '';
   background: url(/img/product-bg.jpg) no-repeat center center/cover;
@@ -1141,6 +1180,7 @@ p {
   filter: blur(10px);
 }
 
+/* Product 1st section container */
 #product-showcase .product-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -1149,10 +1189,12 @@ p {
   margin: auto;
 }
 
+/* Product 1st section content */
 #product-showcase .product-content {
   z-index: 1;
 }
 
+/* Product 1st section grids */
 .product-container .grid-left,
 .product-container .grid-right {
   justify-content: center;
@@ -1160,11 +1202,13 @@ p {
   margin: auto;
 }
 
+/* Product 1st section grid left */
 .product-container .grid-left {
   display: flex;
   flex-direction: column;
 }
 
+/* Product 1st section grid left logo div */
 .product-container .grid-left .logo-div {
   display: flex;
   flex-direction: column;
@@ -1174,12 +1218,14 @@ p {
   text-align: center;
 }
 
+/* Product 1st section grid left logo div first span */
 .product-container .grid-left .logo-div span:first-child {
   font-size: 100px;
   font-weight: bold;
   color: var(--primary-color);
 }
 
+/* Product 1st section grid left logo div second span */
 .product-container .grid-left .logo-div span:nth-child(2) {
   font-size: 130px;
   font-weight: bold;
@@ -1187,12 +1233,14 @@ p {
   margin-top: -15%;
 }
 
+/* Product 1st section grid left logo div third span */
 .product-container .grid-left .logo-div span:nth-child(3) {
   font-size: 17px;
   letter-spacing: 2px;
   margin-top: -6%;
 }
 
+/* Product 1st section grid left logo div last span */
 .product-container .grid-left .logo-div span:last-child {
   font-size: 30px;
   font-weight: bold;
@@ -1202,6 +1250,7 @@ p {
   padding: 0px 15px 0px 15px;
 }
 
+/* product 1st section grid left btn div */
 .product-container .grid-left .b-div {
   margin-bottom: -30%;
   display: flex;
@@ -1214,14 +1263,17 @@ p {
   border-radius: 50%;
 }
 
+/* Product 1st section left grid btn div hover */
 .product-container .grid-left .b-div:hover {
   opacity: 0.8;
 }
 
+/* Product 1st section middle grid */
 .product-container .grid-middle {
   background: url(/img/home-bg-soju.png) no-repeat center center/contain;
 }
 
+/* Product 1st section right grid */
 .product-container .grid-right {
   width: 100%;
   height: 100%;
@@ -1229,6 +1281,7 @@ p {
   flex-direction: column;
 }
 
+/* Product 1st section right grid description div */
 .product-container .grid-right .d-div {
   width: 55%;
   height: 26%;
@@ -1242,20 +1295,24 @@ p {
   margin-top: 20%;
 }
 
+/* Product 1st section right grid description div upper part */
 .product-container .grid-right .d-div .upper {
   height: 120px;
   border-bottom: solid 5px var(--lighter-color);
 }
 
+/* Product 1st section right grid description div upper part span */
 .product-container .grid-right .d-div .upper span {
   font-size: 85px;
   font-weight: bold;
 }
 
+/* Product 1st section right grid description div upper part last span */
 .product-container .grid-right .d-div .upper span:last-child {
   color: var(--primary-color);
 }
 
+/* Product 1st section right grid description div lower part */
 .product-container .grid-right .d-div .lower {
   margin-top: 10px;
   margin-bottom: 20px;
@@ -1263,18 +1320,21 @@ p {
   letter-spacing: 2px;
 }
 
+/* Product 1st section right grid description div lower part stamp icon div */
 .product-container .grid-right .stamp-div {
   display: flex;
   flex-direction: row;
   font-size: 50px;
 }
 
+/* Product 2nd section container */
 #product-second-grid-row .product-second-grid-row-container {
   height: 100vh;
   width: 100%;
   background-color: var(--lighter-color);
 }
 
+/* Product 2nd section row 1 */
 #product-second-grid-row
   .product-second-grid-row-container
   .product-second-grid-row-content
@@ -1288,6 +1348,7 @@ p {
   height: 70%;
 }
 
+/* Product 2nd row grid left top part */
 #product-second-grid-row
   .product-second-grid-row-container
   .product-second-grid-row-content
@@ -1300,6 +1361,7 @@ p {
   margin: auto;
 }
 
+/* Product 2nd row grid left top part first span */
 #product-second-grid-row
   .product-second-grid-row-container
   .product-second-grid-row-content
@@ -1312,6 +1374,7 @@ p {
   letter-spacing: 2px;
 }
 
+/* Product 2nd row grid left top part second span */
 #product-second-grid-row
   .product-second-grid-row-container
   .product-second-grid-row-content
@@ -1323,6 +1386,7 @@ p {
   text-align: center;
 }
 
+/* Product 2nd row grid left bottom part */
 #product-second-grid-row
   .product-second-grid-row-container
   .product-second-grid-row-content
@@ -1337,6 +1401,7 @@ p {
   margin: auto;
 }
 
+/* Product 2nd row grid left bottom part left grid */
 #product-second-grid-row
   .product-second-grid-row-container
   .product-second-grid-row-content
@@ -1354,6 +1419,7 @@ p {
   background: url(/img/home-bg-soju-icon.png) no-repeat center center/contain;
 }
 
+/* Product 2nd row grid left bottom part right grid  */
 #product-second-grid-row
   .product-second-grid-row-container
   .product-second-grid-row-content
@@ -1371,6 +1437,7 @@ p {
   align-items: center;
 }
 
+/* Product 2nd row grid left bottom part right grid first span */
 #product-second-grid-row
   .product-second-grid-row-container
   .product-second-grid-row-content
@@ -1384,6 +1451,7 @@ p {
   margin-bottom: -5%;
 }
 
+/* Product 2nd row grid left bottom part right grid second span */
 #product-second-grid-row
   .product-second-grid-row-container
   .product-second-grid-row-content
@@ -1398,6 +1466,7 @@ p {
   margin-bottom: -15px;
 }
 
+/* Product 2nd row grid left bottom part right grid thrid span */
 #product-second-grid-row
   .product-second-grid-row-container
   .product-second-grid-row-content
@@ -1413,6 +1482,7 @@ p {
   margin-bottom: 20px;
 }
 
+/* Product 2nd row grid left bottom part right grid fourth span and last span */
 #product-second-grid-row
   .product-second-grid-row-container
   .product-second-grid-row-content
@@ -1455,6 +1525,7 @@ p {
 }
 
 /* Mixology Page */
+/* Mixology showcase */
 #mixology-showcase {
   width: 100%;
   height: 100vh;
@@ -1464,6 +1535,7 @@ p {
   position: relative;
 }
 
+/* Mixology showcae container */
 #mixology-showcase .mixology-container {
   display: grid;
   grid-template-rows: 0.3fr 1.7fr;
@@ -1472,6 +1544,7 @@ p {
   height: 100%;
 }
 
+/* Mixology showcase top div */
 #mixology-showcase .mixology-container .mixology-container-t {
   display: flex;
   flex-direction: column;
@@ -1482,6 +1555,7 @@ p {
   margin: auto;
 }
 
+/* Mixology showcase top div fist span */
 #mixology-showcase .mixology-container .mixology-container-t span:first-child {
   font-size: 100px;
   font-weight: 500;
@@ -1489,17 +1563,20 @@ p {
   margin-bottom: -12px;
 }
 
+/* Mixology showcase top div last span */
 #mixology-showcase .mixology-container .mixology-container-t span:last-child {
   font-size: 15px;
   letter-spacing: 3px;
 }
 
+/* Mixology showcase bottom div */
 #mixology-showcase .mixology-container .mixology-container-b {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+/* Mixology showcase bottom div content */
 #mixology-showcase
   .mixology-container
   .mixology-container-b
@@ -1508,8 +1585,13 @@ p {
   grid-template-columns: repeat(5, 1fr);
   width: 100%;
   height: 65%;
+  display: flex;
+  margin: auto;
+  width: 100%;
+  height: 100%;
 }
 
+/* Mixology btn divs */
 #mixology-showcase
   .mixology-container
   .mixology-container-b
@@ -1521,6 +1603,7 @@ p {
   height: 100%;
 }
 
+/* Mixology btn divs buttons */
 #mixology-showcase
   .mixology-container
   .mixology-container-b
@@ -1534,6 +1617,7 @@ p {
   margin-bottom: 35%;
 }
 
+/* Mixology btn divs bttons links */
 #mixology-showcase
   .mixology-container
   .mixology-container-b
@@ -1555,6 +1639,7 @@ p {
   transition: border linear 0.3s;
 }
 
+/* Mixology btn divs buttons links hover */
 #mixology-showcase
   .mixology-container
   .mixology-container-b
@@ -1565,6 +1650,7 @@ p {
   transition: border linear 0.3s;
 }
 
+/* Mixology btn divs button first and second spans */
 #mixology-showcase
   .mixology-container
   .mixology-container-b
@@ -1588,6 +1674,7 @@ p {
   margin-bottom: -10px;
 }
 
+/* Mixology btn divs button last span */
 #mixology-showcase
   .mixology-container
   .mixology-container-b
@@ -1602,6 +1689,7 @@ p {
   margin-left: -2px;
 }
 
+/* Mixolog 1st image div */
 #mixology-showcase
   .mixology-container
   .mixology-container-b
@@ -1609,6 +1697,8 @@ p {
   .mix-1 {
   background: url(/img/soju-1.png) no-repeat center center/contain;
 }
+
+/* Mixolog 2nd image div */
 #mixology-showcase
   .mixology-container
   .mixology-container-b
@@ -1617,6 +1707,7 @@ p {
   background: url(/img/soju-2.png) no-repeat center center/contain;
 }
 
+/* Mixolog 3rd image div */
 #mixology-showcase
   .mixology-container
   .mixology-container-b
@@ -1625,6 +1716,7 @@ p {
   background: url(/img/soju-3.png) no-repeat center center/contain;
 }
 
+/* Mixolog 4th image div */
 #mixology-showcase
   .mixology-container
   .mixology-container-b
@@ -1633,6 +1725,7 @@ p {
   background: url(/img/soju-4.png) no-repeat center center/contain;
 }
 
+/* Mixolog 5th image div */
 #mixology-showcase
   .mixology-container
   .mixology-container-b
@@ -1641,7 +1734,8 @@ p {
   background: url(/img/soju-5.png) no-repeat center center/contain;
 }
 
-/* Crafting */
+/* Crafting Page*/
+/* Crafting 1st section */
 .crafting-grid-row-1 {
   background: url(/img/crafting-bg.jpg) no-repeat center center/cover;
   color: var(--lighter-color);
@@ -1652,6 +1746,7 @@ p {
   padding: 2rem;
 }
 
+/* Crafting 1st section left grid*/
 .crafting-grid-row-1 .crafting-g-l {
   width: 100%;
   height: 100%;
@@ -1659,6 +1754,7 @@ p {
   flex-direction: column;
 }
 
+/* Crafting 1st section left grid content */
 .crafting-grid-row-1 .crafting-g-l .g-1-content {
   display: flex;
   flex-direction: column;
@@ -1670,12 +1766,14 @@ p {
   padding: 30px;
 }
 
+/* Crafting 1st section left grid content first span */
 .crafting-grid-row-1 .crafting-g-l .g-1-content span:first-child {
   font-size: 70px;
   font-weight: bold;
   text-transform: uppercase;
 }
 
+/* Crafting 1st section left grid content 2nd span */
 .crafting-grid-row-1 .crafting-g-l .g-1-content span:nth-child(2) {
   font-size: 30px;
   font-weight: bold;
@@ -1686,6 +1784,7 @@ p {
   margin-bottom: 50px;
 }
 
+/* Crafting 1st section left grid content 3rd span */
 .crafting-grid-row-1 .crafting-g-l .g-1-content span:nth-child(3) {
   font-size: 15px;
   line-height: 1.2;
@@ -1695,6 +1794,7 @@ p {
   margin-bottom: 30px;
 }
 
+/* Crafting 1st section left grid content image */
 .crafting-grid-row-1 .crafting-g-l .g-1-content .crafting-g-img {
   width: 200px;
   height: 200px;
@@ -1703,6 +1803,7 @@ p {
   background: url(/img/crafting-bg-2.png) no-repeat center center/contain;
 }
 
+/* Crafting 1st section left grid content bottom (footer) span div */
 .crafting-grid-row-1 .crafting-g-l .g-1-content .ft {
   font-size: 15px;
   text-align: center;
@@ -1710,12 +1811,14 @@ p {
   margin-bottom: 30px;
 }
 
+/* Crafting 1st section left grid content btn div */
 .crafting-grid-row-1 .crafting-g-l .g-1-content .crafting-btn-div {
   width: 70px;
   height: 70px;
   display: flex;
 }
 
+/* Crafting 2nd section container */
 .crafting-grid-row-2 {
   background: var(--lighter-color);
   color: var(--darker-color);
@@ -1726,10 +1829,12 @@ p {
   padding: 2rem;
 }
 
+/* Crafting 2nd section container grid right */
 .crafting-grid-row-2 .crafting-g-r {
   background: url(/img/home-bg-fact.png) no-repeat center center/cover;
 }
 
+/* Crafting 2nd section container grid left */
 .crafting-grid-row-2 .crafting-g-l {
   width: 100%;
   height: 100%;
@@ -1737,6 +1842,7 @@ p {
   flex-direction: column;
 }
 
+/* Crafting 2nd section container grid left content */
 .crafting-grid-row-2 .crafting-g-l .g-1-content {
   display: flex;
   flex-direction: column;
@@ -1748,12 +1854,14 @@ p {
   padding: 30px;
 }
 
+/* Crafting 2nd section container grid left content 1st span */
 .crafting-grid-row-2 .crafting-g-l .g-1-content span:first-child {
   font-size: 70px;
   font-weight: bold;
   text-transform: uppercase;
 }
 
+/* Crafting 2nd section container grid left content 2nd span */
 .crafting-grid-row-2 .crafting-g-l .g-1-content span:nth-child(2) {
   font-size: 30px;
   font-weight: bold;
@@ -1765,6 +1873,7 @@ p {
   margin-bottom: 50px;
 }
 
+/* Crafting 2nd section container grid left content 3rd span */
 .crafting-grid-row-2 .crafting-g-l .g-1-content span:nth-child(3) {
   font-size: 15px;
   line-height: 1.2;
@@ -1774,6 +1883,7 @@ p {
   margin-bottom: 30px;
 }
 
+/* Crafting 2nd section container grid left content image div */
 .crafting-grid-row-2 .crafting-g-l .g-1-content .crafting-g-img {
   width: 200px;
   height: 200px;
@@ -1783,6 +1893,7 @@ p {
   filter: grayscale(100%);
 }
 
+/* Crafting 2nd section container grid left content bottom(footer) span div */
 .crafting-grid-row-2 .crafting-g-l .g-1-content .ft {
   font-size: 15px;
   text-align: center;
@@ -1790,12 +1901,14 @@ p {
   margin-bottom: 30px;
 }
 
+/* Crafting 2nd section container grid left content btn div */
 .crafting-grid-row-2 .crafting-g-l .g-1-content .crafting-btn-div {
   width: 70px;
   height: 70px;
   display: flex;
 }
 
+/* Crafting 2nd section container grid left content btn */
 .crafting-grid-row-2
   .crafting-g-l
   .g-1-content
@@ -1804,6 +1917,7 @@ p {
   color: var(--grey-color);
 }
 
+/* Crafting 3rd section container */
 .crafting-grid-row-3 {
   background: url(/img/crafting-bg-3.jpg) no-repeat center center/cover;
   color: var(--lighter-color);
@@ -1814,6 +1928,7 @@ p {
   padding: 2rem;
 }
 
+/* Crafting 3rd section left grid */
 .crafting-grid-row-3 .crafting-g-l {
   width: 100%;
   height: 100%;
@@ -1821,6 +1936,7 @@ p {
   flex-direction: column;
 }
 
+/* Crafting 3rd section left grid content */
 .crafting-grid-row-3 .crafting-g-l .g-1-content {
   display: flex;
   flex-direction: column;
@@ -1832,12 +1948,14 @@ p {
   padding: 30px;
 }
 
+/* Crafting 3rd section left grid first span */
 .crafting-grid-row-3 .crafting-g-l .g-1-content span:first-child {
   font-size: 70px;
   font-weight: bold;
   text-transform: uppercase;
 }
 
+/* Crafting 3rd section left grid second span */
 .crafting-grid-row-3 .crafting-g-l .g-1-content span:nth-child(2) {
   font-size: 30px;
   font-weight: bold;
@@ -1848,6 +1966,7 @@ p {
   margin-bottom: 50px;
 }
 
+/* Crafting 3rd section left grid third span */
 .crafting-grid-row-3 .crafting-g-l .g-1-content span:nth-child(3) {
   font-size: 15px;
   line-height: 1.2;
@@ -1857,6 +1976,7 @@ p {
   margin-bottom: 30px;
 }
 
+/* Crafting 3rd section left grid image div */
 .crafting-grid-row-3 .crafting-g-l .g-1-content .crafting-g-img {
   width: 200px;
   height: 200px;
@@ -1865,6 +1985,7 @@ p {
   background: url(/img/crafting-bg-5.png) no-repeat center center/contain;
 }
 
+/* Crafting 3rd section left grid bottom(footer) span div */
 .crafting-grid-row-3 .crafting-g-l .g-1-content .ft {
   font-size: 15px;
   text-align: center;
@@ -1872,12 +1993,14 @@ p {
   margin-bottom: 30px;
 }
 
+/* Crafting 3rd section left grid btn div */
 .crafting-grid-row-3 .crafting-g-l .g-1-content .crafting-btn-div {
   width: 70px;
   height: 70px;
   display: flex;
 }
 
+/* Crafting 4th section */
 .crafting-grid-row-4 {
   background: var(--lighter-color);
   color: var(--dark-color);
@@ -1886,6 +2009,7 @@ p {
   padding: 2rem;
 }
 
+/* Crafting 4th section content*/
 .crafting-grid-row-4 .grid-row-4-content {
   width: 50%;
   height: 100%;
@@ -1894,12 +2018,14 @@ p {
   margin: auto;
 }
 
+/* Crafting 4th section content left grid */
 .crafting-grid-row-4 .grid-row-4-content .crafting-g-l {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+/* Crafting 4th section content left grid content */
 .crafting-grid-row-4 .grid-row-4-content .crafting-g-l .g-l-content {
   display: flex;
   flex-direction: column;
@@ -1909,6 +2035,7 @@ p {
   height: 70%;
 }
 
+/* Crafting 4th section content left grid header span */
 .crafting-grid-row-4 .grid-row-4-content .crafting-g-l .g-l-content span.h {
   width: 60%;
   color: var(--lighter-color);
@@ -1921,6 +2048,7 @@ p {
   padding: 50px;
 }
 
+/* Crafting 4th section content left grid description span */
 .crafting-grid-row-4 .grid-row-4-content .crafting-g-l .g-l-content span.d {
   font-size: 30px;
   text-transform: uppercase;
@@ -1930,6 +2058,7 @@ p {
   margin-bottom: 50px;
 }
 
+/* Crafting 4th section content left grid btn div */
 .crafting-grid-row-4
   .grid-row-4-content
   .crafting-g-l
@@ -1943,6 +2072,7 @@ p {
   height: 100%;
 }
 
+/* Crafting 4th section content left grid btn div grids*/
 .g-l-content .g-l-btn-div .g-l-btn-l,
 .g-l-content .g-l-btn-div .g-l-btn-r {
   width: 170px;
@@ -1951,6 +2081,7 @@ p {
   margin-top: -10px;
 }
 
+/* Crafting 4th section content left grid btn div grids links*/
 .g-l-content .g-l-btn-div .g-l-btn-l a,
 .g-l-content .g-l-btn-div .g-l-btn-r a {
   width: 100%;
@@ -1964,12 +2095,14 @@ p {
   transition: border 0.2s linear;
 }
 
+/* Crafting 4th section content left grid btn div grids links hover*/
 .g-l-content .g-l-btn-div .g-l-btn-l a:hover,
 .g-l-content .g-l-btn-div .g-l-btn-r a:hover {
   border: 8px solid var(--darker-color);
   transition: border 0.2s linear;
 }
 
+/* Crafting 4th section content left grid btn div grids links hover*/
 .g-l-content .g-l-btn-div .g-l-btn-l a > *,
 .g-l-content .g-l-btn-div .g-l-btn-r a > * {
   color: var(--darker-color);
@@ -1980,6 +2113,7 @@ p {
   margin-top: -5px;
 }
 
+/* Crafting 4th section content left grid btn div link span extension (view, of)*/
 .g-l-content .g-l-btn-div .g-l-btn-l a .ext,
 .g-l-content .g-l-btn-div .g-l-btn-r a .ext {
   font-size: 20px;
@@ -1988,11 +2122,13 @@ p {
   text-transform: lowercase;
 }
 
+/* /* Crafting 4th section content right grid */
 .crafting-grid-row-4 .grid-row-4-content .crafting-g-r {
   background: url(/img/home-bg-soju.png) no-repeat center center/contain;
 }
 
-/* Contact */
+/* Contact Page */
+/* Contact container */
 #contact-container {
   width: 100%;
   height: 1750px;
@@ -2002,6 +2138,7 @@ p {
   background: url(/img/contact-bg.jpg) no-repeat center center/cover;
 }
 
+/* Contact container content */
 #contact-container .contact-content {
   width: 35%;
   height: 90%;
@@ -2009,6 +2146,7 @@ p {
   grid-template-rows: 0.3fr 1.7fr;
 }
 
+/* Contact container content header */
 #contact-container .contact-content .contact-h {
   width: 100%;
   height: 100%;
@@ -2018,6 +2156,7 @@ p {
   color: var(--lighter-color);
 }
 
+/* Contact container content header 1st span */
 #contact-container .contact-content .contact-h span:first-child {
   font-size: 90px;
   font-weight: bold;
@@ -2027,6 +2166,7 @@ p {
   margin-top: -10px;
 }
 
+/* Contact container content header every span except the last one */
 #contact-container .contact-content .contact-h span:not(:first-child) {
   font-size: 25px;
   font-weight: 500;
@@ -2034,6 +2174,7 @@ p {
   line-height: 1;
 }
 
+/* Contact form div */
 #contact-container .contact-content .contact-form {
   width: 100%;
   height: 100%;
@@ -2042,11 +2183,13 @@ p {
   margin-top: 30px;
 }
 
+/* Contact form div input fields*/
 #contact-container .contact-content .contact-form .input_field {
   margin-bottom: 15px;
   display: flex;
 }
 
+/* Contact form div labels*/
 #contact-container .contact-content .contact-form .input_field label {
   color: var(--lighter-color);
   font-size: 25px;
@@ -2056,6 +2199,7 @@ p {
   margin-right: 10px;
 }
 
+/* Contact form div check btn div*/
 #contact-container .contact-content .contact-form .input_field label.check {
   width: 20px;
   height: 20px;
@@ -2065,12 +2209,14 @@ p {
   margin-top: 30px;
 }
 
+/* Contact form div select options*/
 #contact-container .contact-content .contact-form .input_field select option {
   color: var(--darker-color);
   font-size: 19px;
   letter-spacing: 1px;
 }
 
+/* Contact form div input, select, textareas*/
 #contact-container .contact-content .contact-form .input_field .input,
 #contact-container .contact-content .contact-form .input_field select,
 #contact-container .contact-content .contact-form .input_field .textarea {
@@ -2088,11 +2234,13 @@ p {
   transition: all 0.3s ease;
 }
 
+/* Contact form div select textarea */
 #contact-container .contact-content .contact-form .input_field .textarea {
   height: 120px;
   resize: none;
 }
 
+/* Contact form div captcha div */
 #contact-container .contact-content .contact-form .input_field #capt {
   background: var(--transparent-color);
   text-decoration: none;
@@ -2114,10 +2262,12 @@ p {
   user-select: none;
 }
 
+/* Contact form div captcha code */
 #contact-container .contact-content .contact-form .code {
   margin-top: -20px;
 }
 
+/* Contact form div captcha btn icon, check icon and result icon*/
 #contact-container .contact-content .contact-form .input_field #capt_btn,
 #contact-container .contact-content .contact-form .input_field #capt_btn_check,
 #contact-container
@@ -2136,6 +2286,7 @@ p {
   margin: 0;
 }
 
+/* Contact form verification result icon */
 #contact-container
   .contact-content
   .contact-form
@@ -2145,6 +2296,7 @@ p {
   opacity: 0;
 }
 
+/* Contact form verification result icon hover, captcha brn hover */
 #contact-container .contact-content .contact-form .input_field #capt_btn:hover,
 #contact-container
   .contact-content
@@ -2155,10 +2307,12 @@ p {
   font-size: 22px;
 }
 
+/* Contact form terms and condition div */
 #contact-container .contact-content .contact-form .terms {
   margin-bottom: 100px;
 }
 
+/* Contact form input filed paragraphs */
 #contact-container .contact-content .contact-form .input_field p {
   width: 90%;
   font-size: 25px;
@@ -2167,11 +2321,13 @@ p {
   color: var(--lighter-color);
 }
 
+/* Contact form input filed paragraphs highlight */
 #contact-container .contact-content .contact-form .input_field p .highlight {
   color: var(--primary-color);
   font-weight: 600;
 }
 
+/* Contact form submit button */
 #contact-container .contact-content .contact-form .input_field .form_btn {
   width: 30%;
   align-self: center;
@@ -2190,12 +2346,14 @@ p {
   transition: all 0.4s ease-in-out;
 }
 
+/* Form submit btn hover */
 #contact-container .contact-content .contact-form .input_field .form_btn:hover {
   background-color: var(--lighter-color);
   color: var(--darker-color);
   transition: all 0.4s ease-in-out;
 }
 
+/* Contact form success confirmation div */
 #contact-container .contact-form .success {
   position: fixed;
   bottom: -65%;
@@ -2213,16 +2371,19 @@ p {
   opacity: 0;
 }
 
+/* Contact form success confirmation div show */
 #contact-container .contact-form .success.show {
   opacity: 1;
   pointer-events: auto;
 }
 
+/* Contact form success confirmation div alert */
 #contact-container .contact-form .success.alert {
   opacity: 1;
   pointer-events: auto;
 }
 
+/* capthca check */
 #contact-container .contact-form .success_check {
   position: absolute;
   left: 20px;
@@ -2230,6 +2391,7 @@ p {
   color: var(--primary-color);
 }
 
+/* success message */
 #contact-container .contact-form .success_msg {
   font-size: 25x;
   color: var(--dark-color);
@@ -2237,6 +2399,7 @@ p {
   margin-left: 40px;
 }
 
+/* success div animation */
 #contact-container .contact-form .success.show {
   animation: show_slide 1s ease forwards;
 }
@@ -2256,6 +2419,7 @@ p {
   }
 }
 
+/* success div hiding animation */
 #contact-container .contact-form .success.hide {
   animation: hide_slide 1s ease forwards;
 }
@@ -2275,23 +2439,26 @@ p {
   }
 }
 
-/* Sense */
+/* Sense Page*/
 #sense-container {
   overflow: hidden !important;
   overflow-y: scroll;
   scroll-behavior: smooth;
-} 
+}
 
+/* Sense page sections */
 #sense-container section {
-  height: 100vh !important; 
+  height: 100vh !important;
   overflow: hidden !important;
 }
 
+/* Sense 1st section conetnt */
 #sense-container section:last-child .content,
 #sense-container section:last-child .nav-diagram {
   margin-top: 15%;
 }
 
+/* Sense showcase div*/
 #sense-showcase {
   color: var(--lighter-color);
   width: 100vw;
@@ -2299,6 +2466,7 @@ p {
   display: flex;
 }
 
+/* Sense background video div */
 #sense-showcase .bg-video {
   position: absolute;
   left: 0;
@@ -2309,6 +2477,7 @@ p {
   height: 100%;
 }
 
+/* Sense background video */
 #sense-showcase .bg-video video {
   position: absolute;
   left: 0;
@@ -2322,6 +2491,7 @@ p {
   overflow: hidden;
 }
 
+/* Sense showcase content */
 #sense-showcase .content {
   width: 30%;
   height: 60%;
@@ -2337,12 +2507,14 @@ p {
   z-index: 10;
 }
 
+/* Sense showcase first span */
 #sense-showcase .content span:first-child {
   font-size: 250px;
   margin-top: -20px;
   margin-bottom: -60px;
 }
 
+/* Sense showcase second span */
 #sense-showcase .content span:nth-child(2) {
   font-size: 30px;
   text-transform: uppercase;
@@ -2352,6 +2524,7 @@ p {
   margin-bottom: 35px;
 }
 
+/* Sense showcase third and fourth spans */
 #sense-showcase .content span:nth-child(3),
 #sense-showcase .content span:nth-child(4) {
   font-size: 15px;
@@ -2359,6 +2532,7 @@ p {
   letter-spacing: 3px;
 }
 
+/* Sense navigation diagram div */
 #sense-showcase .nav-diagram {
   width: 15%;
   height: 50%;
@@ -2373,6 +2547,7 @@ p {
   grid-template-columns: 0.8fr 1.2fr;
 }
 
+/* Sense navigation diagram div tags */
 #sense-showcase .nav-diagram .nav-tag {
   display: flex;
   width: 100%;
@@ -2384,10 +2559,12 @@ p {
   z-index: 11;
 }
 
+/* Sense navigation diagram div image */
 #sense-showcase .nav-diagram .nav-image {
   background: url(/img/home-bg-soju-btn.png) no-repeat center center/contain;
 }
 
+/* Sense navigation diagram div tags spans */
 #sense-showcase .nav-diagram .nav-tag span {
   color: var(--grey-color);
   font-size: 17px;
@@ -2398,27 +2575,31 @@ p {
   transition: color 0.4s linear;
 }
 
+/* Sense navigation diagram div tags spans hover */
 #sense-showcase .nav-diagram .nav-tag span:hover {
   color: var(--lighter-color);
   transition: color 0.4s linear;
   cursor: pointer;
 }
 
+/* Sense navigation diagram div tags active (current) spans */
 #sense-showcase .nav-diagram span.active {
   color: var(--lighter-color);
   background: var(--second-primary-color);
 }
 
+/* sense 2nd section background div */
 #sense-showcase .bg-video-r-2 {
-  position: absolute;  
+  position: absolute;
   min-width: 100%;
   min-height: 100%;
   width: 100%;
   height: 100vh;
 }
 
+/* sense 2nd section background video */
 #sense-showcase .bg-video-r-2 video {
-  position: absolute;  
+  position: absolute;
   min-width: 100%;
   min-height: 100%;
   width: auto;
@@ -2428,16 +2609,18 @@ p {
   overflow: hidden;
 }
 
+/* sense 3rd section background div */
 #sense-showcase .bg-video-r-3 {
-  position: absolute;  
+  position: absolute;
   min-width: 100%;
   min-height: 100%;
   width: 100%;
   height: 100vh;
 }
 
+/* sense 3rd section background vedio */
 #sense-showcase .bg-video-r-3 video {
-  position: absolute;  
+  position: absolute;
   min-width: 100%;
   min-height: 100%;
   width: auto;
@@ -2447,16 +2630,18 @@ p {
   overflow: hidden;
 }
 
+/* sense 4th section background div */
 #sense-showcase .bg-video-r-4 {
-  position: absolute;  
+  position: absolute;
   min-width: 100%;
   min-height: 100%;
   width: 100%;
   height: 100vh;
 }
 
+/* sense 4th section background vedio */
 #sense-showcase .bg-video-r-4 video {
-  position: absolute;  
+  position: absolute;
   min-width: 100%;
   min-height: 100%;
   width: auto;
@@ -2466,16 +2651,18 @@ p {
   overflow: hidden;
 }
 
+/* sense 5th section background div */
 #sense-showcase .bg-video-r-5 {
-  position: absolute;  
+  position: absolute;
   min-width: 100%;
   min-height: 100%;
   width: 100%;
   height: 100vh;
 }
 
+/* sense 5th section background vedio */
 #sense-showcase .bg-video-r-5 video {
-  position: absolute;  
+  position: absolute;
   min-width: 100%;
   min-height: 100%;
   width: auto;
@@ -2485,16 +2672,18 @@ p {
   overflow: hidden;
 }
 
+/* sense 6th section background div */
 #sense-showcase .bg-video-r-6 {
-  position: absolute;  
+  position: absolute;
   min-width: 100%;
   min-height: 100%;
   width: 100%;
   height: 100vh;
 }
 
+/* sense 6th section background vedio */
 #sense-showcase .bg-video-r-6 video {
-  position: absolute;  
+  position: absolute;
   min-width: 100%;
   min-height: 100%;
   width: auto;

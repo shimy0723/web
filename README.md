@@ -1,6 +1,6 @@
 ### IT'S SOJU TIME!! 
-Steps to run the app locally: 
-Make sure that you have Node.js installed.
+#### Steps to run the app locally: 
+#### Make sure that you have Node.js installed.
 After cloning the repository, checkout to the main branch.
 Run the following code in the terminal within /web directory:
 

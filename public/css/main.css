@@ -119,6 +119,7 @@ p {
   top: 35px;
   left: 35px;
   z-index: 7;
+  cursor: pointer;
 }
 
 /* Logo image */
@@ -205,8 +206,7 @@ p {
   position: fixed;
   z-index: 3;
   color: var(--lighter-color);
-  width: 250px;
-  display: none;
+  width: 250px;  
 }
 
 /* Navigation links */
@@ -215,11 +215,15 @@ p {
   display: block;
   color: var(--lighter-color);
   opacity: 0;
+  pointer-events: none;
+  cursor: none; 
 }
 
 /* Navigtaion div animation */
 .nav.visible .link {
   animation: appear 0.5s forwards ease 1s;
+  pointer-events: all;
+  cursor: pointer;
 }
 
 @keyframes appear {
